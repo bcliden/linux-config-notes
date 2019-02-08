@@ -1,5 +1,6 @@
  
 legacy: `optirun`
+
 future: `primusrun`
 
 verbose mode: `optirun|primusrun -v` 
