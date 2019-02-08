@@ -1,7 +1,7 @@
  start PostgreSQL server:
  
- systemctl start postgres
+ `systemctl start postgres`
  
  OR query status:
  
- systemctl status postgres
+ `systemctl status postgres`
