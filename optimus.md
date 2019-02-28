@@ -11,3 +11,5 @@ see if NVIDIA CARD is running:
 can also run 
 `glxgears -info`
 
+for multi-monitor support look into using:
+`intel-virtual-output`
