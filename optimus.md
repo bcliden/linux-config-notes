@@ -11,3 +11,5 @@ see if NVIDIA CARD is running:
 can also run 
 `glxgears -info`
 
+to configure the nvidia driver:
+`optirun -b none nvidia-settings -c :8`
