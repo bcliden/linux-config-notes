@@ -1,15 +1,17 @@
- 
 legacy: `optirun`
 
 future: `primusrun`
 
-verbose mode: `optirun|primusrun -v` 
+verbose mode: `optirun|primusrun -v`
 
 see if NVIDIA CARD is running:
 `cat /proc/acpi/bbswitch`
 
-can also run 
+can also run
 `glxgears -info`
 
 to configure the nvidia driver:
 `optirun -b none nvidia-settings -c :8`
+
+for multi-monitor support look into using:
+`intel-virtual-output`
