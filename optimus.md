@@ -15,3 +15,9 @@ to configure the nvidia driver:
 
 for multi-monitor support look into using:
 `intel-virtual-output`
+
+to open the VGA display and keep the service in the terminal:
+`primusrun intel-virtual-output -b`
+`optirun intel-virtual-output -b`
+use `-f` flag to prevent daemonization
+`fn + F7` to open display modal
