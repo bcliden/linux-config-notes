@@ -1,0 +1,25 @@
+{
+  "editor.fontFamily": "Hack, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "workbench.colorTheme": "Dracula",
+  "window.zoomLevel": 0,
+  "editor.minimap.renderCharacters": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.formatOnSave": false
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "python.linting.pylintArgs": ["--load-plugins=pylint_django"],
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "material-icon-theme.activeIconPack": "angular_ngrx",
+  "prettier.jsxBracketSameLine": true,
+  "editor.lineHeight": 20,
+  "php.suggest.basic": false,
+  "php.validate.enable": false
+}
