@@ -1,3 +1,11 @@
+## newer, easier config:
+in `.sh` script:
+    xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Profile Enabled' 0, 1
+    xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Speed' 1
+
+linked into `/etc/profile.d` so it runs on boot
+
+### prev manjaro config:
  
 in `/etc/X11/xorg.conf.d/20-thinkpad.conf`
 
