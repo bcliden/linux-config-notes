@@ -24,3 +24,16 @@ to configure the nvidia driver:
 use `-f` flag to prevent daemonization
 
 `fn + F7` to open display modal
+
+### disabling dGPU totally (ubuntu):
+
+in: `/etc/default/grub`
+
+added `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nouveau.modeset=0"`
+
+running:
+```
+sudo update-grub  
+sudo apt-get purge nvidia*  
+sudo reboot  
+```
