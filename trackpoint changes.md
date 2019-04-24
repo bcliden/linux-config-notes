@@ -1,7 +1,9 @@
 ## newer, easier config:
 in `.sh` script:
+```
     xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Profile Enabled' 0, 1
     xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Speed' 1
+```
 
 linked into `/etc/profile.d` so it runs on boot
 
@@ -9,6 +11,7 @@ linked into `/etc/profile.d` so it runs on boot
  
 in `/etc/X11/xorg.conf.d/20-thinkpad.conf`
 
+```
 Section "InputClass"
 	Identifier	"Trackpoint Wheel Emulation"
 	MatchProduct	"TPPS/2 IBM TrackPoint|DualPoint Stick|Synaptics Inc. Composite TouchPad / TrackPoint|ThinkPad USB Keyboard with TrackPoint|USB Trackpoint pointing device|Composite TouchPad / TrackPoint"
@@ -20,9 +23,11 @@ Section "InputClass"
 	Option		"YAxisMapping"		"4 5"
 	Option 		"AccelSpeed"		"-0.40"
 EndSection
+```
 
 added udev rules in `/etc/udev/rules.d/10-trackpoint.rules`
 
+```
 ACTION="add",
 SUBSYSTEM="input",
 ATTR{name}=="TPPS/2 IBM TrackPoint",
@@ -31,9 +36,9 @@ ATTR{device/speed}="158",
 ATTR{device/inertia}="6",
 ATTR{device/rate}="200",
 ATTR(device/press_to_select}="0"
-
+```
 later changed to:
-
+```
 ACTION="add",
 SUBSYSTEM="input",
 ATTR{name}=="TPPS/2 IBM TrackPoint",
@@ -42,3 +47,4 @@ ATTR{device/speed}="97",
 ATTR{device/inertia}="6",
 ATTR{device/rate}="200",
 ATTR(device/press_to_select}="0"
+```
