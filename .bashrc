@@ -169,3 +169,15 @@ export PATH=~/.npm-global/bin:$PATH
 
 # opt out of dotnet core telemetry
 DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+# add hook for direnv
+eval "$(direnv hook bash)"
+
+# setting VENV if exists
+show_virtual_env() {
+  if [[ -n "$VIRTUAL_ENV" && -n "$DIRENV_DIR" ]]; then
+    echo "($(basename $VIRTUAL_ENV))"
+  fi
+}
+export -f show_virtual_env
+PS1='$(show_virtual_env)'$PS1
